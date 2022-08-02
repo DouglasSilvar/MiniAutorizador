@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "d9f207d1-b333-454b-9af7-c2d620fb106b",
+		"name": "Mini Autorizador",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14754083"
+	},
+	"item": [
+		{
+			"name": "Get saldo",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/cartoes/0000000000000004",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cartoes",
+						"0000000000000004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastra Cartao",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroCartao\": \"0000000000000004\",\r\n    \"senha\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cartoes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cartoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transacao",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"numeroCartao\": \"0000000000000004\",\r\n    \"senhaCartao\": \"1234\",\r\n    \"valor\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/transacoes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transacoes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
