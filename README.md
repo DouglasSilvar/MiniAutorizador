@@ -1,14 +1,5 @@
 ## Teste de programação
 
-Como parte do processo de contratação de sua empresa, gostaríamos que você desenvolvesse um pequeno sistema, para que possamos ver melhor o seu trabalho.
-
-Fique à vontade para criar a partir dos requisitos abaixo. Se algo não ficou claro, pode assumir o que ficar mais claro para você, e, por favor, *documente suas suposições*.
-
-Crie o projeto no seu Github para que possamos ver os passos realizados (por meio dos commits) para a implementação da solução.
-
-Caso sua solução seja aprovada, faremos uma entrevista contigo, e a utilizaremos durante a entrevista.
-
-Se quiser documentar outros detalhes da sua solução (como *design patterns* e boas práticas utilizadas e outras decisões de projeto) pode mandar ver!
 
 # Mini autorizador
 
